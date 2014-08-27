@@ -1,0 +1,2 @@
+#!/bin/bash
+LC_ALL=EN_us TZ='America/Los_Angeles' date  +'%_d %H:%M'
