@@ -1,0 +1,9 @@
+[user]
+	email = savraz@gmail.com
+	name = Dmitry V.
+[core]
+	whitespace = trailing-space,space-before-tab
+[apply]
+	whitespace = fix
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
