@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#
+# The script requires: 
+#    xdotool - command-line X11 automation tool
+#    seturgent - https://github.com/hiltjo/seturgent
+#
+# In skype: 
+#    Go to "Options" dialog and "Notifications" tab.
+#    Chose the evenst you want notification for, e.g "First Chat Message Received" and "Chat Message Received". 
+#    In "Advanced View" add the scripts location to "Execute the following script".
+# 
+#  http://kvakaren.blogspot.com/2011/07/skype-urgent-hint.html
+#
+
+#IDS=$(xdotool search --name "^\*.*Skype")
+
+IDS=$(xdotool search --name "Skype")
+
+for id in $IDS; do
+    seturgent "${id}"
+done
