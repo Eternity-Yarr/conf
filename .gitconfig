@@ -7,3 +7,4 @@
 	whitespace = fix
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	gpush = push -v origin HEAD:refs/for/changes/$1
