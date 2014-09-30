@@ -1,0 +1,9 @@
+wmname LG3D
+
+while [ true ];do
+               xsetroot -name "$(~/dwm/bin/bar_monitor)"
+     done &
+
+exec ~/dwm/bin/dwm
+
+
